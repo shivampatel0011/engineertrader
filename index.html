@@ -155,7 +155,7 @@
             min-height: 100vh;
             display: flex;
             align-items: center;
-            background: url('https://placehold.co/1920x1080/12141D/1A1C29?text=Subtle+Chart+Background') no-repeat center center/cover;
+            background: url('bg.jpg') no-repeat center center/cover;
             position: relative;
         }
         
@@ -273,6 +273,28 @@
             font-size: 3rem;
             color: var(--primary-color);
             margin-bottom: 1.5rem;
+        }
+        
+        /* --- Video Section --- */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 191, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
         /* --- Testimonials Section --- */
@@ -422,6 +444,7 @@
             <ul class="nav-links">
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#why-us">Humein Kyun Chunein?</a></li>
+                <li><a href="#guidance">Free Guidance</a></li>
                 <li><a href="#testimonials">Student Success</a></li>
             </ul>
             <a href="#courses" class="btn btn-primary cta-button">Abhi Shuru Karein</a>
@@ -450,7 +473,7 @@
                 <div class="courses-grid">
                     <!-- Course Card 1 -->
                     <div class="course-card hidden">
-                        <img src="https://placehold.co/600x400/1A1C29/00bfff?text=Beginner+Candlestick+Chart" alt="Beginner Trading Course">
+                        <img src="thumb.jpg">
                         <div class="course-info">
                             <h3>Beginner's Trading Foundation</h3>
                             <p>Stock market ki basics, technical analysis aur risk management ko zero se seekhein. Pehla kadam
@@ -463,7 +486,7 @@
                     </div>
                     <!-- Course Card 2 -->
                     <div class="course-card hidden">
-                        <img src="https://placehold.co/600x400/1A1C29/28a745?text=Advanced+Futures+Chart" alt="Advanced Trading Course">
+                        <img src="thumb2.jpg" alt="Advanced Trading Course">
                         <div class="course-info">
                             <h3>Advanced Futures & Options</h3>
                             <p>Derivatives market ki gehrayi mein utrein. Complex strategies aur hedging techniques ko master
@@ -476,7 +499,7 @@
                     </div>
                     <!-- Course Card 3 -->
                     <div class="course-card hidden">
-                        <img src="https://placehold.co/600x400/1A1C29/dc3545?text=Crypto+Volatility+Chart" alt="Crypto Trading Course">
+                        <img src="thumb3.jpg" alt="Crypto Trading Course">
                         <div class="course-info">
                             <h3>The Crypto Trading Blueprint</h3>
                             <p>Cryptocurrency ki volatile duniya mein profit kaise banayein. Blockchain, altcoins aur market
@@ -514,6 +537,25 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Free Guidance Video Section -->
+        <section id="guidance">
+            <div class="container">
+                <h2 class="section-title hidden">Free Trading <span>Guidance</span></h2>
+                <p style="text-align:center; max-width:700px; margin:-2rem auto 3rem;">
+                    Apni trading journey shuru karne se pehle, is basic guidance video ko zaroor dekhein.
+                </p>
+                <div class="video-container hidden">
+                    <iframe width="260" height="115"
+                        src="https://www.youtube.com/embed/iuiSAMdW84s?si=1dVDW_mqdtbl5OEd" 
+                        title="YouTube video player" 
+                        frameborder="1" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
 
         <!-- Testimonials Section -->
         <section id="testimonials">
@@ -539,9 +581,9 @@
         <div class="container">
             <a href="#" class="logo"><i class="fa-solid fa-chart-line"></i> TradeMaster</a>
             <div class="social-links">
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="https://youtube.com/@engineertrader99?si=qFbuopangvXkZIkL"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/mr_shivampatel099?igsh=MXV3MnhjajY0NG9kcg=="><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/engineertrader099"><i class="fab fa-telegram"></i></a>
             </div>
             <p class="copyright">&copy; 2025 TradeMaster. All Rights Reserved.</p>
         </div>
@@ -578,3 +620,4 @@
     </script>
 </body>
 </html>
+
